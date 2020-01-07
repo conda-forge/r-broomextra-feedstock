@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broomExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broomExtra/broomExtra_{{ version }}.tar.gz
-  sha256: c750d493eb5e0767712c2f7ec923c2f3b6c88afa4d0892ad0e66b693880d2295
+  sha256: c845548a437d9588c6f1ea9db850784a5948c36de13774af5d400bff1dd16349
 
 build:
   merge_build_host: True  # [win]
