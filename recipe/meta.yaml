@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broomExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broomExtra/broomExtra_{{ version }}.tar.gz
-  sha256: c845548a437d9588c6f1ea9db850784a5948c36de13774af5d400bff1dd16349
+  sha256: 5d39e7ead3956285a630b1f12f9d5aaf870a6b8f6e33505c22f48ffc3f34c2ae
 
 build:
   merge_build_host: True  # [win]
@@ -25,24 +25,24 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-broom >=0.5.2
-    - r-broom.mixed >=0.2.4
-    - r-dplyr >=0.8.1
-    - r-magrittr >=1.5
-    - r-purrr >=0.3.2
-    - r-rlang >=0.4.0
-    - r-rsample >=0.0.4
-    - r-tidyr >=0.8.3
+    - r-broom
+    - r-broom.mixed
+    - r-dplyr
+    - r-magrittr
+    - r-parameters
+    - r-performance
+    - r-rlang
+    - r-tibble
   run:
     - r-base
-    - r-broom >=0.5.2
-    - r-broom.mixed >=0.2.4
-    - r-dplyr >=0.8.1
-    - r-magrittr >=1.5
-    - r-purrr >=0.3.2
-    - r-rlang >=0.4.0
-    - r-rsample >=0.0.4
-    - r-tidyr >=0.8.3
+    - r-broom
+    - r-broom.mixed
+    - r-dplyr
+    - r-magrittr
+    - r-parameters
+    - r-performance
+    - r-rlang
+    - r-tibble
 
 test:
   commands:
