@@ -25,24 +25,24 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-broom >=0.5.2
-    - r-broom.mixed >=0.2.4
-    - r-dplyr >=0.8.1
-    - r-magrittr >=1.5
-    - r-purrr >=0.3.2
-    - r-rlang >=0.4.0
-    - r-rsample >=0.0.4
-    - r-tidyr >=0.8.3
+    - r-broom
+    - r-broom.mixed
+    - r-dplyr
+    - r-magrittr
+    - r-parameters
+    - r-performance
+    - r-rlang
+    - r-tibble
   run:
     - r-base
-    - r-broom >=0.5.2
-    - r-broom.mixed >=0.2.4
-    - r-dplyr >=0.8.1
-    - r-magrittr >=1.5
-    - r-purrr >=0.3.2
-    - r-rlang >=0.4.0
-    - r-rsample >=0.0.4
-    - r-tidyr >=0.8.3
+    - r-broom
+    - r-broom.mixed
+    - r-dplyr
+    - r-magrittr
+    - r-parameters
+    - r-performance
+    - r-rlang
+    - r-tibble
 
 test:
   commands:
