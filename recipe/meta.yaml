@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broomExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broomExtra/broomExtra_{{ version }}.tar.gz
-  sha256: 5d39e7ead3956285a630b1f12f9d5aaf870a6b8f6e33505c22f48ffc3f34c2ae
+  sha256: 4e8ab55e354d3b3f581d8c585bddf90087c3f4f7af3588bd6f9eff1734d70054
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -52,15 +52,12 @@ test:
 about:
   home: https://indrajeetpatil.github.io/broomExtra/, https://github.com/IndrajeetPatil/broomExtra
   license: GPL-3
-  summary: Collection of functions to assist 'broom' and 'broom.mixed' package-related data analysis
-    workflows. In particular, the generic functions tidy(), glance(), and augment()
-    choose appropriate S3 methods from these two packages depending on which package
-    exports the needed method. Additionally, 'grouped_' and 'boot_' variants of the
-    generics provides a convenient way to execute functions across a combination of
-    grouping variable(s) in a dataframe or bootstrap them.
+  summary: Collection of functions to assist 'broom' and 'broom.mixed' package-related data analysis workflows. In particular, the generic functions tidy(), glance(),
+    and augment() choose appropriate S3 methods from these two packages depending on which package exports the needed method. Additionally, 'grouped_' and 'boot_'
+    variants of the generics provides a convenient way to execute functions across a combination of grouping variable(s) in a dataframe or bootstrap them.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:
