@@ -15,6 +15,7 @@ source:
 build:
   merge_build_host: true  # [win]
   number: 0
+  skip:  true # [r_base == '3.5.1']
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -28,21 +29,19 @@ requirements:
     - r-broom
     - r-broom.mixed
     - r-dplyr
-    - r-magrittr
+    - r-ipmisc
     - r-parameters
     - r-performance
     - r-rlang
-    - r-tibble
   run:
     - r-base
     - r-broom
     - r-broom.mixed
     - r-dplyr
-    - r-magrittr
+    - r-ipmisc
     - r-parameters
     - r-performance
     - r-rlang
-    - r-tibble
 
 test:
   commands:
