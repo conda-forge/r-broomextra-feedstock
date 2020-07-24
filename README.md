@@ -5,7 +5,7 @@ Home: https://indrajeetpatil.github.io/broomExtra/, https://github.com/Indrajeet
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Collection of functions to assist 'broom' and 'broom.mixed' package-related data analysis workflows. In particular, the generic functions tidy(), glance(), and augment() choose appropriate S3 methods from these two packages depending on which package exports the needed method. Additionally, 'grouped_' and 'boot_' variants of the generics provides a convenient way to execute functions across a combination of grouping variable(s) in a dataframe or bootstrap them.
 
