@@ -1,11 +1,11 @@
-About r-broomextra
-==================
+About r-broomextra-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-broomextra-feedstock/blob/main/LICENSE.txt)
 
 Home: https://indrajeetpatil.github.io/broomExtra/, https://github.com/IndrajeetPatil/broomExtra
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-broomextra-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of functions to assist 'broom' and 'broom.mixed' package-related data analysis workflows. In particular, the generic functions tidy(), glance(), and augment() choose appropriate S3 methods from these two packages depending on which package exports the needed method. Additionally, 'grouped_' and 'boot_' variants of the generics provides a convenient way to execute functions across a combination of grouping variable(s) in a dataframe or bootstrap them.
 
